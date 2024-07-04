@@ -25,10 +25,10 @@ const images = [
   },
 ];
 
+const arrayImg = [];
 const positionSelect = document.querySelector('.gallery');
 for (const img of images) {
-  positionSelect.insertAdjacentHTML(
-    'beforeend',
-    `<img src="${[img.url]}" alt="${[img.alt]}">`
-  );
+  arrayImg.push(`<img src="${img.url}" alt="${img.alt}">`);
 }
+
+positionSelect.insertAdjacentHTML('beforeend', arrayImg.join(' '));

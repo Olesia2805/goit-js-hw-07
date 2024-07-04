@@ -15,6 +15,10 @@ body {
 
 .gallery{
   border-style: outset;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 img {
